@@ -8,12 +8,11 @@ public_folder: "/images/uploads"
 collections:
   - name: 'page'
     label: 'Page'
-    folder: "_posts/page"
+    folder: "client/public/data/page"
     create: true
     fields:
       - {label: "Label", name: 'label', widget: "string"}
       - {label: "Slug", name: "slug", widget: "string"}
       - {label: "Order", name: "order", widget: "number"}
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Header Image", name: "headerImage", widget: "image"}
       - {label: "Body", name: "body", widget: "markdown"}
