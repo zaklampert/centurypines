@@ -32,6 +32,8 @@
     <link rel="icon"
     type="image/png"
     href="%PUBLIC_URL%/images/icon.png" />
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    
   </head>
   <body>
     <noscript>
@@ -48,5 +50,16 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", function(user) {
+          if (!user) {
+            window.netlifyIdentity.on("login", function() {
+              document.location.href = "/admin/";
+            });
+          }
+        });
+      }
+    </script>
   </body>
 </html>
