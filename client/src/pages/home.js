@@ -73,7 +73,7 @@ export default class extends React.Component {
             }}>Check us out on Facebook!</a>
           <div id="gallery" >
 
-            {photos.map((photo, i) => (
+            {photos && photos.map((photo, i) => (
                 <img key={photo.id} alt="" className="picture"  src={`https://graph.facebook.com/${photo.id}/picture`} />
             ))}
           </div>
