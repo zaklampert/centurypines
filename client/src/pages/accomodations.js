@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 const rooms = [
     {
       title: 'Semi-Private Rooms',
