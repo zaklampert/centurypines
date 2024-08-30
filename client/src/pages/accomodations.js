@@ -36,7 +36,7 @@ export default () => {
           All of our accommodations are equipped with nurse call systems in the rooms and the bathrooms for our residents needing assistance.
         </p>
         <p>
-          Rates vary according to desired accomodations starting at $2450 per month.
+          Rates vary according to desired accomodations starting at $2,900 per month.
         </p>
         <p>
         Century Pines offers the following accommodations:
